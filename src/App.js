@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
-// import './App.css';
+import './App.css';
 import {CardList} from './components/card-list/card-list.component';
+
 
 class App extends Component {
   constructor(){
@@ -28,14 +29,8 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <header className="App-header">
-        <CardList name='Phx'>
-          {
-            this.state.monsters.map(monster=>(
-            <h1 key={monster.id}>{monster.name}</h1>
-            ))
-          }
-        </CardList>
+        {/* <header className="App-header"> */}
+        <CardList  monsters={this.state.monsters} />
           {/* <img src={logo} className="App-logo" alt="logo" /> */}
          
           <a
@@ -46,7 +41,7 @@ class App extends Component {
           >
             Learn React
           </a>
-        </header>
+        {/* </header> */}
       </div>
     );
   }
