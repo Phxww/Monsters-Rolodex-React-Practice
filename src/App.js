@@ -35,6 +35,7 @@ class App extends Component {
 
     return (
       <div className="App">
+        <h1>Monsters Ryuaolodex</h1>
         {/* <header className="App-header"> */}
         <SearchBox 
           placeholder = 'search monsters'
